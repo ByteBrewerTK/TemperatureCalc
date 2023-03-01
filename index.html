@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Temp Calculator</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="cal-box">
+            <h2>Temperature Calculator</h2>
+            <br>
+            <div class="temp-inout">
+                <div class="inp-temp">
+                    <input type="number" id="inp_temp_data" value="0">
+                    <select name="temp_deff" id="temp_deff">
+                        <option value="cel">Celsius (°C)</option>
+                        <option value="far">Fahrenheit (°F)</option>
+                        <option value="kel">Kelvin (K)</option>
+                    </select>
+                </div>
+    
+                <div class="op-temp">
+                    <span id="output"></span>
+                    <select name="tem_deff" id="temp_deff_op">
+                        <option value="cel" onselect="cel">Celsius (°C)</option>
+                        <option value="far" selected>Fahrenheit (°F)</option>
+                        <option value="kel" onselect="kel">Kelvin (K)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
